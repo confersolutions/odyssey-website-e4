@@ -186,7 +186,7 @@ export default function ContactPage() {
                         <Input
                           type="tel"
                           {...register("phone")}
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="+1 (805) 404-9173"
                           aria-invalid={!!errors.phone}
                           className="bg-white/5 border-white/20 text-white placeholder:text-[#94A3B8] focus:border-[#2563EB] focus:ring-[#2563EB]/20"
                         />
@@ -256,8 +256,8 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-[#2563EB]" />
                   <div>
                     <div className="text-sm text-[#E2E8F0]">Email</div>
-                    <a href="mailto:enterprise@odysseyai.com" className="text-white hover:text-[#2563EB]">
-                      enterprise@odysseyai.com
+                    <a href="mailto:solutions@odysseyts.com" className="text-white hover:text-[#2563EB]">
+                      solutions@odysseyts.com
                     </a>
                   </div>
                 </div>
@@ -265,8 +265,8 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5 text-[#10B981]" />
                   <div>
                     <div className="text-sm text-[#E2E8F0]">Phone</div>
-                    <a href="tel:+15551234567" className="text-white hover:text-[#10B981]">
-                      +1 (555) 123-4567
+                    <a href="tel:+18054049173" className="text-white hover:text-[#10B981]">
+                      +1 (805) 404-9173
                     </a>
                   </div>
                 </div>
