@@ -3,8 +3,6 @@ import { Navbar } from "@/components/odyssey/navbar"
 import { SolutionsGrid } from "@/components/odyssey/solutions-grid"
 import { IndustriesTabs } from "@/components/odyssey/industries-tabs"
 import { ChartsDemo } from "@/components/odyssey/charts-demo"
-import { TeamSection } from "@/components/odyssey/team-section"
-import { ContactForm } from "@/components/odyssey/contact-form"
 import { Footer } from "@/components/odyssey/footer"
 
 export default function Page() {
@@ -17,8 +15,6 @@ export default function Page() {
       <SolutionsGrid />
       <IndustriesTabs />
       <ChartsDemo />
-      <TeamSection />
-      <ContactForm />
       <Footer />
     </main>
   )
