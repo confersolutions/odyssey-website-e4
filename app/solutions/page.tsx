@@ -234,9 +234,9 @@ function FeatureCard({
         <div className="p-6">
           <div className="flex items-center gap-3">
             <div className="rounded-lg border border-white/10 bg-white/5 p-2">{icon}</div>
-            <h3 className="text-xl font-semibold">{title}</h3>
+            <h3 className="text-xl font-semibold text-white">{title}</h3>
           </div>
-          <ul className="mt-3 grid list-disc gap-2 pl-5 text-sm text-white/80">
+          <ul className="mt-3 grid list-disc gap-2 pl-5 text-sm text-slate-300">
             {items.map((i) => (
               <li key={i}>{i}</li>
             ))}
@@ -321,10 +321,10 @@ function SolutionCard({ title, icon, desc, features, cta }: Solution) {
       <Card className="group h-full overflow-hidden rounded-2xl border-white/10 bg-white/5 p-6 backdrop-blur transition">
         <div className="flex items-center gap-3">
           <div className="rounded-lg border border-white/10 bg-white/5 p-2">{icon}</div>
-          <h3 className="text-lg font-semibold">{title}</h3>
+          <h3 className="text-lg font-semibold text-white">{title}</h3>
         </div>
-        <p className="mt-2 text-sm text-white/80">{desc}</p>
-        <ul className="mt-3 grid list-disc gap-1.5 pl-5 text-sm text-white/75">
+        <p className="mt-2 text-sm text-slate-300">{desc}</p>
+        <ul className="mt-3 grid list-disc gap-1.5 pl-5 text-sm text-slate-300">
           {features.map((f) => (
             <li key={f}>{f}</li>
           ))}
@@ -525,7 +525,7 @@ function CaseStudyCard(cs: CaseStudy) {
         </div>
         <div className="p-6">
           <div className="text-xs uppercase tracking-wide text-white/60">{cs.industry}</div>
-          <h3 className="mt-1 text-lg font-semibold">{cs.title}</h3>
+          <h3 className="mt-1 text-lg font-semibold text-white">{cs.title}</h3>
 
           <div className="mt-4 grid grid-cols-3 gap-3">
             {cs.beforeAfter.map((m) => (
@@ -538,7 +538,7 @@ function CaseStudyCard(cs: CaseStudy) {
             ))}
           </div>
 
-          <blockquote className="mt-4 border-l-2 border-white/20 pl-3 text-sm text-white/80">
+          <blockquote className="mt-4 border-l-2 border-white/20 pl-3 text-sm text-slate-300">
             {"“"}
             {cs.quote}
             {"” "}

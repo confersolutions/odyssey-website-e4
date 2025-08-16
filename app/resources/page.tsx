@@ -37,8 +37,8 @@ export default function ResourcesPage() {
               <img src="/abstract-resource-cover.png" alt="Resource cover" className="h-40 w-full object-cover" />
               <div className="p-5">
                 <div className="text-xs uppercase tracking-wide text-white/60">{r.type}</div>
-                <div className="mt-1 text-lg font-semibold">{r.title}</div>
-                <p className="mt-1 text-sm text-white/70">{r.desc}</p>
+                <div className="mt-1 text-lg font-semibold text-white">{r.title}</div>
+                <p className="mt-1 text-sm text-slate-300">{r.desc}</p>
                 <Link href="#" className="mt-3 inline-block text-sm text-[#2563EB] hover:underline">
                   {"Read more →"}
                 </Link>

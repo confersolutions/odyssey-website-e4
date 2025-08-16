@@ -389,15 +389,15 @@ function IndustryShowcase({
   return (
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <Card className="rounded-2xl border-white/10 bg-white/5 p-6 backdrop-blur">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <ul className="mt-3 grid list-disc gap-2 pl-5 text-white/80">
+        <h3 className="text-xl font-semibold text-white">{title}</h3>
+        <ul className="mt-3 grid list-disc gap-2 pl-5 text-slate-300">
           {bullets.map((b) => (
             <li key={b} className="text-sm">
               {b}
             </li>
           ))}
         </ul>
-        <div className="mt-4 text-sm text-[#10B981]">{"See success stories →"}</div>
+        <div className="mt-4 text-sm text-blue-400 hover:text-blue-300">{"See success stories →"}</div>
       </Card>
       <Card className="overflow-hidden rounded-2xl border-white/10 bg-white/5 p-0 backdrop-blur">
         <div className="relative aspect-[16/9] w-full">
@@ -426,8 +426,8 @@ function TechCard({ title, desc, img }: { title: string; desc: string; img: stri
           className="object-cover opacity-90 transition group-hover:opacity-100"
         />
       </div>
-      <div className="text-lg font-semibold">{title}</div>
-      <p className="mt-2 text-sm text-white/70">{desc}</p>
+      <div className="text-lg font-semibold text-white">{title}</div>
+      <p className="mt-2 text-sm text-slate-300">{desc}</p>
     </Card>
   )
 }
