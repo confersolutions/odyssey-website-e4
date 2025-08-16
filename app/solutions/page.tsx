@@ -8,7 +8,7 @@ import { Navbar } from "@/components/odyssey/navbar"
 import { Footer } from "@/components/odyssey/footer"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Bot, Workflow, Cpu, Database, ShieldCheck, Network, ArrowRight, BarChart3, Sparkles } from "lucide-react"
+import { Bot, Workflow, Cpu, Database, ShieldCheck, Network, ArrowRight, BarChart3 } from "lucide-react"
 
 // Simple reveal animation variants
 const fadeUp = {
@@ -108,43 +108,6 @@ export default function SolutionsPage() {
               </motion.div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Platform Overview */}
-      <section className="mx-auto max-w-7xl px-4 py-12">
-        <motion.h2
-          className="text-3xl font-bold md:text-4xl"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.4 }}
-          variants={fadeUp}
-        >
-          {"The Odyssey AI Platform"}
-        </motion.h2>
-        <motion.p
-          className="mt-2 max-w-3xl text-white/70"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.4 }}
-          variants={fadeUp}
-        >
-          {"Modular capabilities designed for secure, scalable, and compliant AI across the enterprise."}
-        </motion.p>
-
-        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <FeatureCard
-            icon={<Sparkles className="h-5 w-5 text-[#10B981]" />}
-            title="Agentic AI Engine"
-            items={["Autonomous decision-making", "Workflow automation", "Real-time analytics"]}
-            img="/agentic-ai-engine-diagram.png"
-          />
-          <FeatureCard
-            icon={<Database className="h-5 w-5 text-[#7C3AED]" />}
-            title="Data Foundry"
-            items={["Enterprise data pipelines", "Model training & deployment", "MLOps infrastructure"]}
-            img="/enterprise-data-foundry-pipeline.png"
-          />
         </div>
       </section>
 
@@ -478,7 +441,7 @@ const caseStudies: CaseStudy[] = [
     author: "VP Risk",
     role: "Top 10 Card Issuer",
     img: "/fraud-detection-dashboard.png",
-    link: "/resources",
+    link: "/case-studies/financial-services-fraud-prevention",
   },
   {
     title: "Operational efficiency in care coordination",
@@ -492,7 +455,7 @@ const caseStudies: CaseStudy[] = [
     author: "Clinical Ops Director",
     role: "Integrated Health Network",
     img: "/placeholder-u787b.png",
-    link: "/resources",
+    link: "/case-studies/healthcare-care-coordination",
   },
   {
     title: "Personalization at scale with inventory balance",
@@ -506,7 +469,7 @@ const caseStudies: CaseStudy[] = [
     author: "Chief Digital Officer",
     role: "Global Retailer",
     img: "/retail-recommendation-dashboard.png",
-    link: "/resources",
+    link: "/case-studies/retail-personalization-inventory",
   },
 ]
 
